@@ -21,7 +21,26 @@
     1. 源码文件以_test结尾：xxx_test.go
     2. 测试方法名以Test开头:func TestXXX(t *testing.T){}
 * 变量赋值(与其他主要语言差异)
-    1.赋值可以进行自动类型推断
-    2.在一个赋值语句中可以对多个变量进行同时赋值
+    1. 赋值可以进行自动类型推断
+    2. 在一个赋值语句中可以对多个变量进行同时赋值
 * 常量定义(与其他主要语言差异)
-    1.快速设置连续值(iota)
+    1. 快速设置连续值(iota)
+* 基本数据类型
+    1. bool
+    2. string
+    3. int int8 int16 int32 int64
+    4. uint uint8 uint16 uint32 uint64 uintptr
+    5. byte    // alias for uint8
+    6. rune    // alias for int32, represents a Unicode code point
+    7. float32 float64
+    8. complex64 complex128
+* 类型转换(与其他主要语言差异)
+    1. Go语言不允许隐式类型转换
+    2. 别名和原有类型也不能进行隐式类型转换
+* 类型预定义值
+    1. math.MaxInt64
+    2. math.MaxFloat64
+    3. math.MaxUint32
+* 指针类型(与其他主要语言差异)
+    1. 不支持指针运算
+    2. string是值类型,其默认初始值为空字符串,而不是nil

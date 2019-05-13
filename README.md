@@ -95,7 +95,7 @@
 * map(extend)
     1. map的value可以是一个方法
     2. 与Go的Dock type接口方式一起,可以方便实现单一方法对象的工厂模式
- * 实现Set(与其他主要语言差异)
+* 实现Set(与其他主要语言差异)
     1. Go的内置集合中没有Set实现,可以map[type]bool
         * 元素唯一性
         * 基本操作
@@ -103,10 +103,18 @@
             2. 判断元素是否存在
             3. 删除元素 
             4. 元素个数
- 
-
-
-
+### 第9章(ch9)
+* 字符串(与其他主要语言差异)
+    1. string是数据类型,不是引用和指针类型
+    2. string是只读的byte slice, len函数是它所包含的byte数
+    3. string的byte数组可以存放任何数据
+    4. string是不可变的byte slice
+* Unicode UTF8
+    1. Unicode是一种字符集(code point)
+    2. UTF8是unicode的存储实现(转换为字节序列的规则)
+* 常用的字符串函数
+    1. strings [http://golang.org/pkg/strings/]
+    2. strconv [http://golang.org/pkg/strconv/]
 
 
 

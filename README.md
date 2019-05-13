@@ -49,7 +49,7 @@
     2. string是值类型,其默认初始值为空字符串,而不是nil
 ### 第四章(ch4)
 * 算数运算符
-    1. + - * / % ++ --
+    1. \+ - * / % ++ --
     2. Go语言没有前置++, --
 * 比较运算符
     1. == != > < >= <=
@@ -113,10 +113,14 @@
     1. Unicode是一种字符集(code point)
     2. UTF8是unicode的存储实现(转换为字节序列的规则)
 * 常用的字符串函数
-    1. strings [http://golang.org/pkg/strings/]
-    2. strconv [http://golang.org/pkg/strconv/]
-
-
+    1. strings http://golang.org/pkg/strings/
+    2. strconv http://golang.org/pkg/strconv/
+### 第十章(ch10)
+* 函数是一等公民(与其他主要语言差异)
+    1. 可以有多个返回值
+    2. 所有参数都是值传递：slice,map,channel会有传引用的错觉
+    3. 函数可以作为变量的值
+    4. 函数可以作为参数和返回值    
 
 
 

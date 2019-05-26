@@ -187,7 +187,15 @@
         1. godep http://github.com/tools/godep
         2. glide http://github.com/Masterminds/glide
         3. dep http://github.com/golang/dep 
-
+### 第十六章(ch16)
+* Thead vs Groutine
+    1. 创建时默认的stack的大小
+        1. JDK5以后Java Thread stack 默认为1M
+        2. Groutine 的Stack初始化大小2k
+    2. 和KSE(Kernel Space Entity)的对应关系
+        1. Java Thread 1：1
+        2. Groutine    M : N 
+  
 
 
 

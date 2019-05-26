@@ -175,9 +175,18 @@
     2. go get -u 强制从远程更新依赖(go get -u github.com/easierway/concurrent_map)
     3. 注意代码在github上的组织形式,以适应go get
     4. 直接以代码路径开始,不要有src
-
-
-
+* Go未解决问题
+    1. 同一环境,不同项目使用同一包的不同版本
+    2. 无法管理对包的特定版本的依赖
+    3. vendor(查找包路径解决方案)
+        1. 当前包下的vendor目录
+        2. 向上级目录查找,直到找到src下的vendor目录
+        3. 在GOPATH下面查找依赖包
+        4. 在GOROOT目录下查找
+    4. 常用的依赖管理工具
+        1. godep http://github.com/tools/godep
+        2. glide http://github.com/Masterminds/glide
+        3. dep http://github.com/golang/dep 
 
 
 

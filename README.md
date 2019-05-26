@@ -160,7 +160,21 @@
 * recover
     1. 形成僵尸服务进程,导致health check失效
     2. "Let's it Crash!"往往是我们恢复不确定性错误的最好办法
-
+### 第十五章(ch15)
+* 构建可复用模块
+    1. 基本复用模块单元(以首字母大写来表明可被包外代码访问)
+    2. 代码的package可以和所在的目录不一致
+    3. 同一目录里的Go代码的package要保持一致  
+* init方法
+    1. 在main被执行前,所有依赖的package的init方法都会被执行
+    2. 不同包的init函数按照包导入的依赖关系决定执行顺序
+    3. 每个包可以有多个init函数
+    4. 包的每个源文件也可以有多个init函数,这点比较特殊
+* package
+    1. 通过go get来获取远程依赖
+    2. go get -u 强制从远程更新依赖(go get -u github.com/easierway/concurrent_map)
+    3. 注意代码在github上的组织形式,以适应go get
+    4. 直接以代码路径开始,不要有src
 
 
 

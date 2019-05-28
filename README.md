@@ -195,8 +195,12 @@
     2. 和KSE(Kernel Space Entity)的对应关系
         1. Java Thread 1：1
         2. Groutine    M : N 
-  
-
+### 第十七章(ch17)
+* 共享内存并发机制
+### 第十八章(ch18)
+* CSP vs Actor
+    1. 和Actor的直接通讯不同,CSP模式则是通过Channel进行通讯的,更松耦合一些.
+    2. Go中是有容量限制并且独立与处理Groutine,而如Erlang,Actor模式中的mailbox容量是无限的,接受进程也是被动的处理消息.
 
 
 

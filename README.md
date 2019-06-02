@@ -208,3 +208,10 @@
 * v, ok <- ch; ok 为bool值,true表示正常接受,false表示通道关闭
 * 所有的channel接收者都会在channel关闭时,立刻从阻塞等待中返回且上述ok值为false,这个广播机制常常被利用,进行向多个订阅者同时发送信号.
 * 任务取消
+* Context与任务取消
+    1. 根Context: 通过context.Background()创建
+    2. 子Context: context.WithCancel(parentContext)创建
+        1. ctx, cancel := context.WithCancel(context.Background)
+    3. 当前Context被取消时, 基于他的子context都会被取消
+    4. 接受取消通知<-ctx.Done()
+    

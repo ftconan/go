@@ -214,4 +214,5 @@
         1. ctx, cancel := context.WithCancel(context.Background)
     3. 当前Context被取消时, 基于他的子context都会被取消
     4. 接受取消通知<-ctx.Done()
-    
+### 第二十一章(ch21)
+* 仅执行一次(单例模式)

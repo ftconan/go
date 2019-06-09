@@ -250,7 +250,10 @@
 * 内置单元测试框架
 * go test -bench=.(性能测试)
 * go test -bench=. benchmem(内存测试)
-  
+### 第三十六章(ch35)
+* BDD
+* 安装 go get -u github.com/smartystreets/goconvey/convey
+* WEB UI $GOPATH/bin/goconvey
   
   
   

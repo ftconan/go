@@ -246,7 +246,10 @@
     1. go test -v -cover
 * 断言
     1. https://github.com/stretchr/testify
-  
+### 第三十五章(ch35)
+* 内置单元测试框架
+* go test -bench=.(性能测试)
+* go test -bench=. benchmem(内存测试)
   
   
   

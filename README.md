@@ -250,11 +250,17 @@
 * 内置单元测试框架
 * go test -bench=.(性能测试)
 * go test -bench=. benchmem(内存测试)
-### 第三十六章(ch35)
+### 第三十六章(ch36)
 * BDD
 * 安装 go get -u github.com/smartystreets/goconvey/convey
 * WEB UI $GOPATH/bin/goconvey
-  
+### 第三十七章(ch37)
+* reflect.TypeOf vs reflect.ValueOf
+    1. reflect.TypeOf 返回类型(reflect.Type)
+    2. reflect.ValueOf 返回类型(reflect.Value)
+    3. 可以从reflect.Value获得类型
+    4. 通过kind的来判断类型
+    
   
   
   

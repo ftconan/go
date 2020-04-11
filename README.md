@@ -96,7 +96,7 @@ go study notes
     2. 不支持负数索引
 * 切片(可变长数组)
     1. 指针,len,cap
-    2. 不可比较,只能和nil比较
+    2. 切片不可比较,只能和nil比较
 ### 第七章(ch7)
 * map
     1. s := map[string]int{"a": 1, "b": 2}

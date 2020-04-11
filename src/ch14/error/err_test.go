@@ -15,7 +15,7 @@ func GetFibonacci(n int) ([]int, error) {
 	if n < 2 {
 		return nil, LessThanTwoError
 	}
-	if n < 2 || n  > 100 {
+	if n  > 100 {
 		return nil, LargeThanHundredError
 	}
 

@@ -98,8 +98,9 @@ go study notes
     1. 指针,len,cap
     2. 切片不可比较,只能和nil比较
 ### 第七章(ch7)
-* map
+* map(与其他主要语言差异)
     1. s := map[string]int{"a": 1, "b": 2}
+    2. 在访问key不存在时，仍会返回零值，不能通过返回nil来判断元素是否存在
 ### 第八章(ch8)
 * map(extend)
     1. map的value可以是一个方法

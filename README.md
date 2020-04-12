@@ -217,7 +217,7 @@ go study notes
 * 向关闭的channel发送数据, 会导致panic
 * v, ok <- ch; ok 为bool值,true表示正常接受,false表示通道关闭
 * 所有的channel接收者都会在channel关闭时,立刻从阻塞等待中返回且上述ok值为false,这个广播机制常常被利用,进行向多个订阅者同时发送信号.
-* 任务取消
+* 任务取消(close channel是广播机制，取消所有协程)
 * Context与任务取消
     1. 根Context: 通过context.Background()创建
     2. 子Context: context.WithCancel(parentContext)创建

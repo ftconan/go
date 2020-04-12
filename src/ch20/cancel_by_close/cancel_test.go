@@ -38,5 +38,5 @@ func TestCancel(t *testing.T) {
 		}(i, cancelChan)
 	}
 	cancel2(cancelChan)
-	time.Sleep(time.Second * 1)
+	time.Sleep(time.Microsecond * 100)
 }

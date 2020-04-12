@@ -270,7 +270,12 @@ go study notes
     2. reflect.ValueOf 返回类型(reflect.Value)
     3. 可以从reflect.Value获得类型
     4. 通过kind的来判断类型
-    
+### 第三十七章(ch37)
+* DeepEqual(比较切片和map)
+* 关于反射你应该知道的
+    1. 提高了程序的灵活性
+    2. 降低了程序的可读性
+    3. 降低了程序的性能
   
   
   

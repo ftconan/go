@@ -8,7 +8,7 @@ import (
 
 func service() string {
 	time.Sleep(time.Microsecond * 50)
-	return "None"
+	return "Done"
 }
 
 func otherTask() {

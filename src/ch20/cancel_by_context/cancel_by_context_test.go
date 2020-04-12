@@ -3,8 +3,8 @@ package cancel_by_context
 import (
 	"context"
 	"fmt"
-"testing"
-"time"
+	"testing"
+	"time"
 )
 
 func isCancelled(ctx context.Context) bool {

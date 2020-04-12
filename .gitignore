@@ -12,3 +12,6 @@
 *.out
 
 .idea/*
+pkg/*
+src/github.com/*
+src/gopkg.in/*

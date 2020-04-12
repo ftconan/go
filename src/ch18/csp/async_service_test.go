@@ -38,5 +38,5 @@ func TestAsyncService(t *testing.T) {
 	retCh := AsyncService()
 	otherTask()
 	fmt.Println(<-retCh)
-	time.Sleep(time.Second * 1)
+	//time.Sleep(time.Second * 1)
 }

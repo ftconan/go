@@ -3,11 +3,11 @@
 go study notes
 
 - [go](#go)
-    - [go learning](#go-learning)
+    - [go-learning](#go-learning)
     
 ---
 
-## go learning
+## go-learning
 ### 第一章(ch1)
 * 开发环境 GOPATH
     1. go 1.8 以后Unix默认$HOME/go

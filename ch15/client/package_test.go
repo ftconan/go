@@ -1,7 +1,9 @@
 package client
 
-import "testing"
-import "ch15/series"
+import (
+	"golang/ch15/series"
+	"testing"
+)
 
 func TestPackage(t *testing.T)  {
 	t.Log(series.GetFibonacciSerie(5))

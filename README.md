@@ -4,6 +4,7 @@ go study notes
 
 - [go](#go)
     - [go-learning](#go-learning)
+    - [Go程序设计语言](#Go程序设计语言)
     
 ---
 
@@ -298,8 +299,10 @@ go study notes
         4. 利用插件进行扩展
 ### 第四十二章(ch42)
 * 内置的JSON解析（利用反射实现，通过FieldTag来标识对应的json值）
-  
-  
+
+## Go程序设计语言
+### 第一章 入门
+1. hello，world
   
   
   

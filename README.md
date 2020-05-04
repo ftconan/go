@@ -303,6 +303,8 @@ go study notes
 ## Go程序设计语言
 ### 第一章 入门
 1. hello，world
+2. 命令行参数
+3. 找出重复行
   
   
   

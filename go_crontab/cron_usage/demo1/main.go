@@ -17,6 +17,8 @@ func main() {
 		nextTime time.Time
 	)
 
+	// Linux crontab
+	// 秒力度，年（——>2099）
 	// 分（0-59） 时（0-23） 天（1-31） 月（1-12） 星期（0-6）
 
 	// 每分钟执行一次
@@ -26,7 +28,7 @@ func main() {
 	//}
 
 	// 每隔5分钟执行一次
-	if expr, err = cronexpr.Parse("*/6 * * * *"); err != nil {
+	if expr, err = cronexpr.Parse("*/5 * * * * * *"); err != nil {
 		fmt.Println(err)
 		return
 	}
@@ -35,5 +37,12 @@ func main() {
 	now = time.Now()
 	// 下次调度时间
 	nextTime = expr.Next(now)
-	fmt.Println(now, nextTime)
+	//fmt.Println(now, nextTime)
+
+	// 等待定时器超时
+	time.AfterFunc(nextTime.Sub(now), func() {
+		fmt.Println("被调度了:", nextTime)
+	})
+
+	time.Sleep(5 * time.Second)
 }

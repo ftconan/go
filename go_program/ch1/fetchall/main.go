@@ -21,7 +21,7 @@ func main() {
 	for range os.Args[1:] {
 		fmt.Println(<-ch) // receive form channel
 	}
-	fmt.Println("%.2fs elapsed\n", time.Since(start).Seconds())
+	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }
 
 func fetch(url string, ch chan<- string) {

@@ -3,13 +3,13 @@
 go study notes
 
 - [go](#go)
-    - [go-learning](#go-learning)
+    - [go_learning](#go_learning)
     - [Go程序设计语言](#Go程序设计语言)
     - [Go语言开发分布式任务调度-轻松搞定高性能Crontab](#Go语言开发分布式任务调度-轻松搞定高性能Crontab)
     
 ---
 
-## go-learning
+## go_learning
 ### 第一章(ch1)
 * 开发环境 GOPATH
     1. go 1.8 以后Unix默认$HOME/go
@@ -310,12 +310,15 @@ go study notes
   
 ## Go语言开发分布式任务调度-轻松搞定高性能Crontab
 ### 第一章 导学
-### 第二章 第2章 如何执行shell命令
+### 第二章 如何执行shell命令
 1. 原理介绍
 2. 执行任务
 3. 捕获任务输出
 4. 强制结束任务
-  
+### 第三章 如何解析cron表达式
+1. cron表达式原理
+2. 开源cron解析库 
+3. 调度多个cron 
   
   
   

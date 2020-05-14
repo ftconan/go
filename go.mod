@@ -7,4 +7,5 @@ require (
 	github.com/gorhill/cronexpr v0.0.0-20180427100037-88b0669f7d75
 	github.com/smartystreets/goconvey v1.6.4
 	github.com/stretchr/testify v1.5.1
+	golang.org/x/net v0.0.0-20190311183353-d8887717615a
 )

@@ -4,9 +4,9 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"runtime"
+"fmt"
+"os"
+"runtime"
 )
 
 func main() {

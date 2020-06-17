@@ -29,7 +29,7 @@ func main() {
 	for _, url := range os.Args[1:] {
 		links, err := findLinks(url)
 		if err != nil {
-			_, _ = fmt.Fprintf(os.Stderr, "findlinks: %v\n", err)
+			_, _ = fmt.Fprintf(os.Stderr, "findlinks3: %v\n", err)
 			continue
 		}
 		for _, link := range links {

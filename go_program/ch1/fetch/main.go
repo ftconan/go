@@ -23,6 +23,6 @@ func main() {
 			_, _ = fmt.Fprintf(os.Stderr, "fecth: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
-		fmt.Println("%s", string(b))
+		fmt.Printf("%s", b)
 	}
 }

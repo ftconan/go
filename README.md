@@ -394,6 +394,28 @@ go study notes
 5. 空导入
 6. 包及其命名
 7. go工具
+### 第十一章 测试
+1. go test工具
+2. Test函数
+3. 覆盖率
+4. Benchmark函数
+5. 性能剖析
+6. Example函数
+### 第十二章 反射
+1. 为什么使用反射
+2. reflect.Type和reflect.Value
+3. Display: 一个递归的值显示器
+4. 示例：编码S表达式
+5. 使用reflect.Value来设置值
+6. 访问结构体字段标签 
+7. 显示类型的方法
+8. 注意事项 
+### 第十三章 低级编程
+1. unsafe.Sizeof,Alignof和Offsetof
+2. unsafe.Pointer
+3. 示例: 深度相等
+4. 使用cgo调用C代码
+5. 关于安全注意事项286
  
 ## Go语言开发分布式任务调度-轻松搞定高性能Crontab
 ### 第一章 导学

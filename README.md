@@ -5,7 +5,7 @@ go study notes
 - [go](#go)
     - [go_learning](#go_learning)
     - [Go程序设计语言](#Go程序设计语言)
-    - [Go语言开发分布式任务调度,轻松搞定高性能Crontab](#Go语言开发分布式任务调度,轻松搞定高性能Crontab)
+    - [Go语言开发分布式任务调度——轻松搞定高性能Crontab](#Go语言开发分布式任务调度——轻松搞定高性能Crontab)
     - [Go学习笔记](#Go学习笔记)
 ---
 
@@ -418,7 +418,7 @@ go study notes
 5. 关于安全注意事项286
  
 
-## Go语言开发分布式任务调度,轻松搞定高性能Crontab
+## Go语言开发分布式任务调度——轻松搞定高性能Crontab
 ### 第一章 导学
 ### 第二章 如何执行shell命令
 1. 原理介绍

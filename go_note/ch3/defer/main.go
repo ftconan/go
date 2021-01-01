@@ -21,7 +21,7 @@ func test() error {
 	return nil
 }
 
-func test1(x int)  {
+func test1(x int) {
 	defer println("a")
 	defer println("b")
 
@@ -32,7 +32,7 @@ func test1(x int)  {
 	defer println("c")
 }
 
-func test2()  {
+func test2() {
 	x, y := 10, 20
 	defer func(i int) {
 		println("defer:", i, y)
@@ -55,13 +55,13 @@ func testdefer() {
 	defer lock.Unlock()
 }
 
-func BenchmarkTest(b *testing.B)  {
+func BenchmarkTest(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		test3()
 	}
 }
 
-func BenchmarkTestDefer(b *testing.B)  {
+func BenchmarkTestDefer(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		testdefer()
 	}

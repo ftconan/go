@@ -129,4 +129,32 @@ func main() {
 	println(u.Resource1.name)
 	//println(u.id)
 	println(u.Resource1.id)
+
+	type Resource2 struct {
+		id int
+	}
+	type User5 struct {
+		*Resource2
+		//Resource2
+		name string
+	}
+	u2 := User5{
+		&Resource2{1},
+		"Administrator",
+	}
+	fmt.Println(u2)
+
+	// oop
+	type User6 struct {
+		id   int
+		name string
+	}
+	type Manager3 struct {
+		User6
+		title string
+	}
+	m3 := Manager3{User6{1, "Tom"}, "Administrator"}
+	//var u3 User = m3
+	var u3 User6 = m3.User6
+	fmt.Println(u3)
 }

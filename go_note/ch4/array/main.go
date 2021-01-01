@@ -5,7 +5,7 @@ package main
 
 import "fmt"
 
-func test(x [2]int)  {
+func test(x [2]int) {
 	fmt.Printf("x: %p\n", &x)
 	x[1] = 100
 }

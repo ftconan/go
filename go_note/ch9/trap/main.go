@@ -1,5 +1,5 @@
 // Author: magician
-// File:   main.go
+// File:   demo1.go
 // Date:   2021/1/3
 package main
 

@@ -1,5 +1,5 @@
 // Author: magician
-// File:   main.go
+// File:   demo1.go
 // Date:   2020/7/23
 // The du3 command computes the disk usage of the files in a directory.
 package main

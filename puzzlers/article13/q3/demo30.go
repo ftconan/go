@@ -29,6 +29,10 @@ func (cat Cat) SetNameOfCopy(name string) {
 	cat.name = name
 }
 
+func (cat Cat) Name() string {
+	return cat.name
+}
+
 func (cat Cat) ScientificName() string {
 	return cat.scientificName
 }

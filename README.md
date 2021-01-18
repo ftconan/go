@@ -606,4 +606,11 @@ go study notes
 22. panic函数、recover函数以及defer语句（下）
     1. defer函数调用，栈结构，先进后出
 ### 第三章 Go语言实战与应用
-1. 变量
+23. 测试的基本规则和流程（上）
+    1. Go 语言对测试函数的名称和签名都有哪些规定？
+        * 对于功能测试函数来说，其名称必须以Test为前缀，并且参数列表中只应有一个*testing.T类型的参数声明
+        * 对于性能测试函数来说，其名称必须以Benchmark为前缀，并且唯一参数的类型必须是*testing.B类型的
+        * 对于示例测试函数来说，其名称必须以Example为前缀，但对函数的参数列表没有强制规定
+24. 测试的基本规则和流程（下）
+    1. cd golang/puzzlers/article20/q2 & go test .
+    2. cd golang/puzzlers/article20/q2 & go test -bench=. -run=^$ .

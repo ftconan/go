@@ -614,3 +614,4 @@ go study notes
 24. 测试的基本规则和流程（下）
     1. cd golang/puzzlers/article20/q2 & go test .
     2. cd golang/puzzlers/article20/q2 & go test -bench=. -run=^$ .
+25. 更多的测试手法

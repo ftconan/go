@@ -615,3 +615,9 @@ go study notes
     1. cd golang/puzzlers/article20/q2 & go test .
     2. cd golang/puzzlers/article20/q2 & go test -bench=. -run=^$ .
 25. 更多的测试手法
+26. sync.Mutex与sync.RWMutex
+    1. 我们使用互斥锁时有哪些注意事项？
+        * 不要重复锁定互斥锁
+        * 不要忘记解锁互斥锁，必要时使用defer语句
+        * 不要对尚未锁定或者已解锁的互斥锁解锁
+        * 不要在多个函数之间直接传递互斥锁

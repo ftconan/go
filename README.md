@@ -625,3 +625,8 @@ go study notes
     1. 条件变量怎样与互斥锁配合使用？
         * 条件变量的初始化离不开互斥锁，并且它的方法有的也是基于互斥锁的
 28. 条件变量sync.Cond （下）
+29. 原子操作（上）
+    1. sync/atomic包中提供了几种原子操作？可操作的数据类型又有哪些？
+        * 加法（add）、比较并交换（compareand swap，简称 CAS）、加载（load）、存储（store）和交换（swap）
+        * int32、int64、uint32、uint64、uintptr，以及unsafe包中的Pointer。
+        * 不过，针对unsafe.Pointer类型，该包并未提供进行原子加法操作的函数。

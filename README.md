@@ -630,3 +630,8 @@ go study notes
         * 加法（add）、比较并交换（compareand swap，简称 CAS）、加载（load）、存储（store）和交换（swap）
         * int32、int64、uint32、uint64、uintptr，以及unsafe包中的Pointer。
         * 不过，针对unsafe.Pointer类型，该包并未提供进行原子加法操作的函数。
+30. 原子操作（下）
+31. sync.WaitGroup和sync.Once
+    1. sync.WaitGroup类型值中计数器的值可以小于0吗?
+        * 不可以,这样会引发一个 panic
+        * 先统一Add，再并发Done，最后Wait

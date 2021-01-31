@@ -635,3 +635,8 @@ go study notes
     1. sync.WaitGroup类型值中计数器的值可以小于0吗?
         * 不可以,这样会引发一个 panic
         * 先统一Add，再并发Done，最后Wait
+32. context.Context类型
+    1. 怎样使用context包中的程序实体，实现一对多的 goroutine 协作流程？
+        * 在这个函数体中，我先后调用了context.Background函数和context.WithCancel函数。
+        * 并得到了一个可撤销的context.Context类型的值（由变量cxt代表）。
+        * 以及一个context.CancelFunc类型的撤销函数（由变量cancelFunc代表）。

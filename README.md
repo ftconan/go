@@ -640,3 +640,6 @@ go study notes
         * 在这个函数体中，我先后调用了context.Background函数和context.WithCancel函数。
         * 并得到了一个可撤销的context.Context类型的值（由变量cxt代表）。
         * 以及一个context.CancelFunc类型的撤销函数（由变量cancelFunc代表）。
+33. 临时对象池sync.Pool
+    1. 为什么说临时对象池中的值会被及时地清理掉？
+        * Go 语言运行时系统中的垃圾回收器，所以在每次开始执行之前，都会对所有已创建的临时对象池中的值进行全面地清除

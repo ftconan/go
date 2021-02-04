@@ -663,3 +663,19 @@ go study notes
         * 导出内容时，相应方法只会导出已读计数代表的索引之后的未读部分
         * 获取长度时，相应方法会依据已读计数和内容容器的长度，计算未读部分的长度并返回
 39. bytes包与字节串操作（下）
+40. io包中的接口和工具（上）
+    1. 在io包中，io.Reader的扩展接口和实现类型都有哪些？它们分别都有什么功用？
+        1. 扩展接口
+            * io.ReadWriter
+            * io.ReadCloser
+            * io.ReadWriteCloser
+            * io.ReadSeeker
+            * io.ReadWriteSeeker
+        2. 实现类型
+            * *io.LimitedReader
+            * *io.SectionReader
+            * *io.teeReader
+            * io.multiReader
+            * io.pipe
+            * io.PipeReader
+41. io包中的接口和工具（下）

@@ -702,3 +702,9 @@ go study notes
     1. http.Client类型中的Transport字段代表着什么？
         * 向网络服务发送 HTTP 请求，并从网络服务接收 HTTP 响应的操作过程
         * 也就是说，该字段的方法RoundTrip应该实现单次HTTP 事务（或者说基于 HTTP 协议的单次交互）需要的所有步骤
+48. 程序性能分析基础（上）
+    1. 怎样让程序对 CPU 概要信息进行采样？
+        * 需要用到runtime/pprof包中的 API
+        * 在我们想让程序开始对 CPU 概要信息进行采样的时候，需要调用这个代码包中的StartCPUProfile函数
+        * 而在停止采样的时候则需要调用该包中的StopCPUProfile函数。
+49. 程序性能分析基础（下）

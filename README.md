@@ -693,3 +693,8 @@ go study notes
         * 对于io包中最核心的 3 个简单接口io.Reader、io.Writer和io.Closer，*os.File类型都实现了它们
         * 该类型还实现了另外的 3 个简单接口，即：io.ReaderAt、io.Seeker和io.WriterAt
 45. 使用os包中的API （下）
+46. 访问网络服务
+    1. net.Dial函数的第一个参数network有哪些可选值？
+        * net.Dial函数会接受两个参数，分别名为network和address，都是string类型的。
+        * 参数network常用的可选值一共有 9 个。这些值分别代表了程序底层创建的 socket 实例可使用的不同通信协议
+        * tcp, tcp4, tcp6, udp, udp4, udp6, unix, unixgram, unixpacket

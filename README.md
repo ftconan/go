@@ -698,3 +698,7 @@ go study notes
         * net.Dial函数会接受两个参数，分别名为network和address，都是string类型的。
         * 参数network常用的可选值一共有 9 个。这些值分别代表了程序底层创建的 socket 实例可使用的不同通信协议
         * tcp, tcp4, tcp6, udp, udp4, udp6, unix, unixgram, unixpacket
+47. 基于HTTP协议的网络服务
+    1. http.Client类型中的Transport字段代表着什么？
+        * 向网络服务发送 HTTP 请求，并从网络服务接收 HTTP 响应的操作过程
+        * 也就是说，该字段的方法RoundTrip应该实现单次HTTP 事务（或者说基于 HTTP 协议的单次交互）需要的所有步骤

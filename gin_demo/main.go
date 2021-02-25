@@ -24,6 +24,22 @@ func mustBig(fl validator.FieldLevel) bool {
 	return true
 }
 
+func middle1()gin.HandlerFunc{
+	return func(c *gin.Context) {
+		fmt.Println("middle1 before")
+		c.Next()
+		fmt.Println("middle1 last")
+	}
+}
+
+func middle2()gin.HandlerFunc{
+	return func(c *gin.Context) {
+		fmt.Println("middle2 before")
+		c.Next()
+		fmt.Println("middle2 last")
+	}
+}
+
 func main() {
 	r := gin.Default() // Logger, Recovery (middleware)
 
@@ -75,6 +91,7 @@ func main() {
 			"method": c.Request.Method,
 		})
 	})
+
 	// Model binding and validation
 	r.POST("/testBind", func(c *gin.Context) {
 		var p PostParams
@@ -92,6 +109,7 @@ func main() {
 			})
 		}
 	})
+
 	// Upload files
 	r.POST("/testUpload", func(c *gin.Context) {
 		// Single file
@@ -131,6 +149,17 @@ func main() {
 		}
 	})
 
-	//r.Run(":8080")
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	// Grouping routes
+	v1 := r.Group("/v1")
+	// Using middleware
+	v1.Use(middle1()).Use(middle2())
+
+	v1.GET("test", func(c *gin.Context) {
+		fmt.Println("test method")
+		c.JSON(200, gin.H{
+			"success": true,
+		})
+	})
+
+	r.Run(":8080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
